@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct RootView: View {
-    @StateObject private var userSettings = UserSettings()
+    @StateObject private var userSettings = SettingManager()
     
     var body: some View {
         Group {

@@ -15,6 +15,8 @@
 		A8B1C6F029F9A7B200967803 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B1C6EF29F9A7B200967803 /* LoginView.swift */; };
 		A8B1C6F229F9A89300967803 /* UserSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B1C6F129F9A89300967803 /* UserSettings.swift */; };
 		A8B1C6F429F9A97600967803 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B1C6F329F9A97600967803 /* RootView.swift */; };
+		C6E74B352AABB4C600DF8A16 /* SettingsDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6E74B342AABB4C600DF8A16 /* SettingsDefaults.swift */; };
+		C6E74B372AABB62A00DF8A16 /* SettingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6E74B362AABB62A00DF8A16 /* SettingManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +29,8 @@
 		A8B1C6EF29F9A7B200967803 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		A8B1C6F129F9A89300967803 /* UserSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSettings.swift; sourceTree = "<group>"; };
 		A8B1C6F329F9A97600967803 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		C6E74B342AABB4C600DF8A16 /* SettingsDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsDefaults.swift; sourceTree = "<group>"; };
+		C6E74B362AABB62A00DF8A16 /* SettingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,11 +64,13 @@
 			isa = PBXGroup;
 			children = (
 				A8B1C6DF29F9881C00967803 /* StateAndDataFlowApp.swift */,
-				A8B1C6E129F9881C00967803 /* ContentView.swift */,
 				A8B1C6F329F9A97600967803 /* RootView.swift */,
+				A8B1C6E129F9881C00967803 /* ContentView.swift */,
 				A8B1C6EF29F9A7B200967803 /* LoginView.swift */,
 				A8B1C6ED29F9A14400967803 /* TimeCounter.swift */,
 				A8B1C6F129F9A89300967803 /* UserSettings.swift */,
+				C6E74B342AABB4C600DF8A16 /* SettingsDefaults.swift */,
+				C6E74B362AABB62A00DF8A16 /* SettingManager.swift */,
 				A8B1C6E329F9881D00967803 /* Assets.xcassets */,
 				A8B1C6E529F9881D00967803 /* Preview Content */,
 			);
@@ -149,7 +155,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6E74B372AABB62A00DF8A16 /* SettingManager.swift in Sources */,
 				A8B1C6EE29F9A14400967803 /* TimeCounter.swift in Sources */,
+				C6E74B352AABB4C600DF8A16 /* SettingsDefaults.swift in Sources */,
 				A8B1C6E229F9881C00967803 /* ContentView.swift in Sources */,
 				A8B1C6F429F9A97600967803 /* RootView.swift in Sources */,
 				A8B1C6F029F9A7B200967803 /* LoginView.swift in Sources */,
