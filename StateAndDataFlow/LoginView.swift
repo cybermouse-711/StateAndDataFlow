@@ -22,11 +22,11 @@ struct LoginView: View {
                         Image(systemName: "checkmark.circle")
                         Text("Ok")
                     }
-                }
+                }.disabled(!checkName())
             }.padding(.leading)
             
             Text(countName.formatted())
-                .foregroundColor(.gray)
+                .foregroundColor(.gray) //здест нет цвета
                 .padding(.trailing)
         }
     }
@@ -38,21 +38,11 @@ struct LoginView: View {
         }
     }
     
-
-    
-}
-/*
-extension Text {
-    
-    private func checkName(_ name: String) {
-        if name.count < 3 {
-            Text(name).foregroundColor(.red)
-        } else {
-            Text(name).foregroundColor(.green)
-        }
+    private func checkName() -> Bool {
+        name.count >= 3
     }
 }
-*/
+
 struct LoginView_Previews: PreviewProvider {
     static var userSettings = SettingManager()
     static var previews: some View {
