@@ -23,41 +23,22 @@ struct ContentView: View {
             Spacer()
             
             VStack {
-                Button(
-                    "\(timer.buttonTitle)", action: timer.startTimer)
-                    .modifier(.red)
-             
-                Button("Login Out", action: userSettings.deletedName)
-                    .modifier(.blue)
+                ButtonModifaire(
+                    title: "\(timer.buttonTitle)",
+                    color: .red,
+                    action: timer.startTimer
+                ).padding(.bottom)
+                
+                ButtonModifaire(
+                    title: "Login Out",
+                    color: .blue,
+                    action: userSettings.deletedName
+                )
             }
            
             Spacer()
         }
         .padding()
-    }
-}
-
-struct ButtonView: ViewModifier {
-    let color: Color
-
-    func body(content: Content) -> some View {
-        content
-        .frame(width: 200, height: 60)
-        .background(color)
-        .cornerRadius(20)
-        .overlay(
-            RoundedRectangle(cornerRadius: 20)
-                .stroke(.black, lineWidth: 4)
-        )
-    }
-}
-
-extension View {
-    func modifier(_ color: Color) -> some View {
-        ModifiedContent(
-            content: self,
-            modifier: ButtonView(color: color)
-        )
     }
 }
 

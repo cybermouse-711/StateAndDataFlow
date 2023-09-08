@@ -16,6 +16,7 @@
 		A8B1C6F429F9A97600967803 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B1C6F329F9A97600967803 /* RootView.swift */; };
 		C6E74B352AABB4C600DF8A16 /* SettingsDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6E74B342AABB4C600DF8A16 /* SettingsDefaults.swift */; };
 		C6E74B372AABB62A00DF8A16 /* SettingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6E74B362AABB62A00DF8A16 /* SettingManager.swift */; };
+		C6E74B3B2AABD20800DF8A16 /* ButtonModifaire.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6E74B3A2AABD20800DF8A16 /* ButtonModifaire.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		A8B1C6F329F9A97600967803 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 		C6E74B342AABB4C600DF8A16 /* SettingsDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsDefaults.swift; sourceTree = "<group>"; };
 		C6E74B362AABB62A00DF8A16 /* SettingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingManager.swift; sourceTree = "<group>"; };
+		C6E74B3A2AABD20800DF8A16 /* ButtonModifaire.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonModifaire.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 			children = (
 				A8B1C6DF29F9881C00967803 /* StateAndDataFlowApp.swift */,
 				C6E74B392AABC4D300DF8A16 /* Views */,
+				C6E74B3C2AABD20E00DF8A16 /* Modifiers */,
 				C6E74B382AABC4BC00DF8A16 /* Services */,
 				A8B1C6E329F9881D00967803 /* Assets.xcassets */,
 				A8B1C6E529F9881D00967803 /* Preview Content */,
@@ -96,6 +99,14 @@
 				A8B1C6EF29F9A7B200967803 /* LoginView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		C6E74B3C2AABD20E00DF8A16 /* Modifiers */ = {
+			isa = PBXGroup;
+			children = (
+				C6E74B3A2AABD20800DF8A16 /* ButtonModifaire.swift */,
+			);
+			path = Modifiers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -172,6 +183,7 @@
 				A8B1C6EE29F9A14400967803 /* TimeCounter.swift in Sources */,
 				C6E74B352AABB4C600DF8A16 /* SettingsDefaults.swift in Sources */,
 				A8B1C6E229F9881C00967803 /* ContentView.swift in Sources */,
+				C6E74B3B2AABD20800DF8A16 /* ButtonModifaire.swift in Sources */,
 				A8B1C6F429F9A97600967803 /* RootView.swift in Sources */,
 				A8B1C6F029F9A7B200967803 /* LoginView.swift in Sources */,
 				A8B1C6E029F9881C00967803 /* StateAndDataFlowApp.swift in Sources */,
