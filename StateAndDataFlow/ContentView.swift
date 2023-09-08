@@ -33,7 +33,6 @@ struct ContentView_Previews: PreviewProvider {
     static var userSettings = SettingManager()
     static var previews: some View {
         ContentView(userSettings: userSettings)
-            .environmentObject(UserSettings())
     }
 }
 
@@ -56,7 +55,6 @@ struct ButtonView: View {
                 .stroke(.black, lineWidth: 4)
         )
         
-  
     }
 }
 
