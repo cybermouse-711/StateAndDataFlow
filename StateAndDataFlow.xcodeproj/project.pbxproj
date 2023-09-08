@@ -62,12 +62,8 @@
 			isa = PBXGroup;
 			children = (
 				A8B1C6DF29F9881C00967803 /* StateAndDataFlowApp.swift */,
-				A8B1C6F329F9A97600967803 /* RootView.swift */,
-				A8B1C6E129F9881C00967803 /* ContentView.swift */,
-				A8B1C6EF29F9A7B200967803 /* LoginView.swift */,
-				A8B1C6ED29F9A14400967803 /* TimeCounter.swift */,
-				C6E74B342AABB4C600DF8A16 /* SettingsDefaults.swift */,
-				C6E74B362AABB62A00DF8A16 /* SettingManager.swift */,
+				C6E74B392AABC4D300DF8A16 /* Views */,
+				C6E74B382AABC4BC00DF8A16 /* Services */,
 				A8B1C6E329F9881D00967803 /* Assets.xcassets */,
 				A8B1C6E529F9881D00967803 /* Preview Content */,
 			);
@@ -80,6 +76,26 @@
 				A8B1C6E629F9881D00967803 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C6E74B382AABC4BC00DF8A16 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				A8B1C6ED29F9A14400967803 /* TimeCounter.swift */,
+				C6E74B362AABB62A00DF8A16 /* SettingManager.swift */,
+				C6E74B342AABB4C600DF8A16 /* SettingsDefaults.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		C6E74B392AABC4D300DF8A16 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A8B1C6F329F9A97600967803 /* RootView.swift */,
+				A8B1C6E129F9881C00967803 /* ContentView.swift */,
+				A8B1C6EF29F9A7B200967803 /* LoginView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

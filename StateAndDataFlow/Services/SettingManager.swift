@@ -8,7 +8,7 @@
 import Foundation
 import Combine
 
-class SettingManager: ObservableObject {
+final class SettingManager: ObservableObject {
     let objectWillChange = PassthroughSubject<Void, Never>()
     
     @SettingsDefaults(key: "name", defaultValue: "")
@@ -23,6 +23,11 @@ class SettingManager: ObservableObject {
         willSet {
             objectWillChange.send()
         }
+    }
+    
+    func deletedName() {
+        name = ""
+        isLoggedIn = false
     }
 }
 

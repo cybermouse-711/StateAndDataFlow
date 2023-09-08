@@ -10,7 +10,6 @@ import SwiftUI
 struct LoginView: View {
     @ObservedObject var userSettings: SettingManager
     @AppStorage("name") var name = ""
-    @State private var countName = 0
     
     var body: some View {
         HStack {
@@ -25,8 +24,8 @@ struct LoginView: View {
                 }.disabled(!checkName())
             }.padding(.leading)
             
-            Text(countName.formatted())
-                .foregroundColor(.gray) //здест нет цвета
+            Text(name.count.formatted())
+                .foregroundColor(checkName() ? .green : .red) 
                 .padding(.trailing)
         }
     }
